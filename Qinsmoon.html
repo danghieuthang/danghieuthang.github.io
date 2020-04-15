@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="image/logo.jpg" />
+	<title>Qin's Moon - Tần Thời Minh Nguyệt</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- ------------------ -->
+
+    <!-- My css -->
+    <link rel="stylesheet" type="text/css" href="css/qinmoon.css">
+    <!-- My Script -->
+    <script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    document.getElementById("myBtn").style.display = "block";
+		  } else {
+		    document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+		//  $(window).on("scroll", function() {
+  //           if($(window).scrollTop()) {
+  //                 $('header').addClass('nav-top');
+  //                 $('header').removeClass('bg-dark');
+  //                 $('header').removeClass('navbar-dark');
+  //           }
+
+  //           else {
+  //                 $('header').removeClass('nav-top');
+  //                 $('header').addClass('bg-dark');
+  //                  $('header').addClass('navbar-dark');
+  //           }
+
+  //     })
+	 // 
+	</script>
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<header id="header" class="">
+	    <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="Home.html" target="ourifame" >
+                <img src="banner.png" alt="logo">
+ 			</a>
+ 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#target">
+ 				<span class="navbar-toggler-icon"></span>
+ 			</button>
+ 			<div class="collapse navbar-collapse" id="target">
+ 				<ul class="navbar-nav">
+  		  			<li class="nav-item hover-effect">
+	      				<a class="nav-link" href="Home.html" target="ourifame">TRANG CHỦ</a>
+	    			</li>
+	    			<li class="nav-item hover-effect">
+	     				<a class="nav-link" href="sanpham.html" target="ourifame">SẢN PHẨM</a>
+	    			</li>
+	    			<li class="nav-item hover-effect">
+	      				<a class="nav-link" href="#">ALBUM</a>
+	    			</li>
+	    			<li class="nav-item hover-effect">
+	      				<a class="nav-link" href="nhanvat.html" target="ourifame">NHÂN VẬT</a>
+	    			</li>
+	    			<li class="nav-item hover-effect">
+	     				<a class="nav-link" href="tintuc.html" target="ourifame">BÀI VIẾT MỚI</a>
+	    			</li>
+	    			<li class="nav-item hover-effect">
+	    				<a class="nav-link" href="contact.html" title="" target="ourifame">LIÊN HỆ</a>
+	    			</li>
+
+	    			<li class="nav-item dropdown">
+	    				<a class="nav-link dropdown-toggle" href="#" title="navbardrop" data-toggle="dropdown">
+	    					MÔN PHÁI
+	    				</a>
+	    				<div class="dropdown-menu">
+	    					<a href="dropdown-item" title="" href="#">Link 1</a>
+	    					<a href="dropdown-item" title="" href="#">Link 2</a> 
+	    					<a href="dropdown-item" title="" href="#">Link 2</a> 
+	    					<a href="dropdown-item" title="" href="#">Link 2</a>    					
+	    				</div>
+	    			</li>
+ 			</ul>
+ 			</div>
+ 			<form class="form-inline" action="#" id="target2">
+					    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+					    <button class="btn btn-success" type="submit">Search</button>
+			        </form>
+		</nav>
+	</header>
+		
+	<div class="fixDisplay container">
+		<div class="row">
+			<div id="demo" class="carousel slide col-sm-9" data-ride="carousel">
+	  			<ul class="carousel-indicators">
+	    			<li data-target="#demo" data-slide-to="0" class="active"></li>
+				    <li data-target="#demo" data-slide-to="1"></li>
+				    <li data-target="#demo" data-slide-to="2"></li>
+				    <li data-target="#demo" data-slide-to="3"></li>
+				    <li data-target="#demo" data-slide-to="4"></li>
+				</ul>
+		  		<div class="carousel-inner">
+			    <div class="carousel-item active">
+			     	 <img src="image/4.jpg" alt="ảnh bìa" width="100%" height="auto">
+			      		<div class="carousel-caption">
+			        		<p>Tần Thời Minh Nguyệt</p>
+			      		</div> 
+			    </div>
+			    <div class="carousel-item">
+			      	<img src="image/3.jpg" alt="ảnh bìa" width="100%" height="auto">
+			      		<div class="carousel-caption">
+			        		<p>Tần Thời Minh Nguyệt</p>
+			      		</div>   
+			    </div>
+			    <div class="carousel-item">
+			    	<img src="image/2.jpg" alt="ảnh bìa" width="100%" height="auto">
+			      		<div class="carousel-caption">
+			        		<p>Tần Thời Minh Nguyệt</p>
+			      		</div>   
+			    </div>
+			    <div class="carousel-item">
+			    	<img src="image/bia5.jpg" alt="ảnh bìa" width="100%" height="auto">
+			    		<div class="carousel-caption">
+			        		<p>Tần Thời Minh Nguyệt</p>
+			      		</div> 
+			    </div>
+			    <div class="carousel-item">
+			    	<img src="image/bia6.png" alt="ảnh bìa" width="100%" height="auto">
+			    		<div class="carousel-caption">
+			        		<p>Tần Thời Minh Nguyệt</p>
+			      		</div> 
+			    </div>
+	  		</div>
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+			    <span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+	 </div>
+	</div>
+
+	<div class="container fixDisplay">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-md-8">
+				<iframe frameborder="0" src="home.html" width="100%" height="100%" name="ourifame" id="ourifame" class="embed-responsive-item"></iframe>	
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<aside>
+					<h3>Tin mới về phim</h3>
+					
+					<div id="sidebar" class="bg-secondary text-white">
+						<table>
+							<tr>
+								<td><img src="image/quanglamthienha.jpg"></td>
+								<td>
+									<h6>Quân Lâm Thiên Hạ</h6>
+									<p>Trong cát vàng, một dũng sĩ mặc giáp trụ cưỡi ngựa chạy như bay, hắn là ai? Đối mặt chiến đấu như thế nào? </p>
+									<a href="#">Xem toàn bộ bài viết</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="image/lomanmanhe.jpg">
+								</td>
+								<td>
+									<h6>Lộ Mạn Mạn Hề</h6>
+									<p>Mười hai tuổi, có lẽ cũng không còn nhỏ nữa. Nhất là trong thời khắc khói lửa loạn lạc lúc bấy giờ. Không biết cha mẹ mình là ai, thân thế mơ hồ,...</p>
+									<a href="#">Xem toàn bộ bài viết</a>		
+								</td>						
+							</tr>
+							
+							<tr>
+								<td>
+									<img src="image/diemphi.jpg">
+								</td>
+								<td>
+									<h6>Vì sao Diệm Phi không chịu gặp Nguyệt Thần?</h6>
+									<p>Diệm Phi thực lực rất cao, thâm sâu khó lường, có thể truy sát thành công Lục Chỉ Hắc Hiệp mà ngay cả Ngũ đại trưởng lão liên thủ cũng không thể đánh bại được Lục Chỉ Hắc Hiệp, địa vị còn cao hơn so với Nguyệt Thần.
+									</p>
+									<a href="">Xem toàn bộ bài viết</a>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+							</tr>
+						</table>
+								
+					</div>
+				</aside>
+			</div>
+		</div>
+	</div>
+<!-- 	<div class="footer-main-div container">
+	<div class="footer-social-icons">
+		<ul>
+			<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+		</ul>
+	</div>
+	<div class="footer-menu-one">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">Contact us</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="footer-bottom container">
+	<p>Design by &copy; <a href="">Đặng Hiếu Thắng</a>
+	</p>
+</div> -->
+
+	<footer class="footer-qinsmoon">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<h4 class="title">Giới thiệu</h4>
+				<p>QinsMoon là website cung cấp và cập nhật liên tục và nhanh nhất thông tin về phim Tần Thời Minh Nguyệt được các thành viên liên tục đóng góp rất nhiều về thông tin nổi bật.</p>	
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<h4>Hỗ trợ</h4>
+				<div class="footer-social-icons">
+			<ul>
+				<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+			</ul>
+		</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 quangcao">
+				<h4>Liên hệ</h4>
+				<a href="" title="">
+					<img src="image/icon-email.png" alt="" class="icon-email">
+					Email: dhthang1998@gmail.com
+				</a>
+				<br>
+				<a href="" title="">
+					<img src="image/icon-phone.png" alt="" class="icon-phone">
+					Phone: 0969.653.921
+				</a>
+				<br>
+				<a href="" title="">
+					<img src="image/icon-location.png" alt="" class="icon-location">
+					Location: Số 1, Đường 01, Tỉnh 01
+				</a>
+			</div>
+		</div>
+	</footer>
+	
+	
+</body>
+</html>

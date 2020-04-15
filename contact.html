@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+   <head>
+      <link rel="shortcut icon" href="image/logo.jpg" />
+      <title>Tần Thời Minh Nguyệt - Contact</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+      <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script>
+         window.onscroll = function() {scrollFunction()};
+         function scrollFunction() {
+           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+             document.getElementById("myBtn").style.display = "block";
+           } else {
+             document.getElementById("myBtn").style.display = "none";
+           }
+         }
+         function topFunction() {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+         }
+      	var ck_name=/^[A-Za-z0-9]{3,20}$/;
+      	var ck_email=/^([\w-]+(?:\.[w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+      	var ck_phone=/^[0-9]{10,12}$/;
+      	function validate()
+      	{
+      		var name=form.Name.value;
+      		var email=form.Email.value;
+      		var phone=form.Phone.value;
+      		var errors=[];
+      		if(!ck_name.test(name))
+      		{
+      			errors[errors.length]="You valid name.";
+      		}
+      		if(!ck_email.test(email))
+      		{
+      			errors[errors.length]="You must be a valid email(xxx@xx.xx)";
+      		}
+      		if(!ck_phone.test(phone))
+      		{
+      			errors[errors.length]="You must be a valid phone(0-9)"
+      		}
+      		if(errors.length>0)
+      		{
+      			reportErrors(errors);
+      			return false;
+      		}
+      		return true;
+      	}
+      	function reportErrors(errors)
+      	{
+      		var msg="Please Enter Valid Data...\n";
+      		for(var i=0; i<errors.length; i++)
+      		{
+      			var numError=i+1;
+      			msg+="\n"+numError+". "+errors[i];
+      		}
+      		alert(msg);
+      	}
+      </script>
+   </head>
+   <body>
+      <i id="myBtn" class="fas fa-chevron-circle-up" onclick="topFunction()"></i>
+      <div class="sub-banner">
+         <nav class="navbar navbar-default">
+            <div class="container">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a  href="index.html">
+                     <h1>Qin's Moon</h1>
+                  </a>
+               </div>
+               <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                     <li class="hover-effect"><a href="index.html">Home</a></li>
+                     <li class="hover-effect"><a href="about.html">About</a></li>
+                     <li class="hover-effect"><a href="Library.html">Library</a></li>
+                     <li class="hover-effect"><a href="news.html">News</a></li>
+                     <li class="hover-effect active"><a href="contact.html">Contact</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </div>
+      <!-- banner -->
+      <div class="contact-agileinfo">
+         <div class="container">
+            <h2>Contact Us</h2>
+            <div class="col-md-4 contact-left-agile">
+               <div class="address-w3-agileits" id="address">
+                  <h4>Address</h4>
+                  <address>
+                     <ul>
+                        <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Hạ Nội</li>
+                        <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Đà Nẵng</li>
+                        <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> TP. HCM</li>
+                     </ul>
+                  </address>
+               </div>
+               <div class="phone-agileits-w3layouts" id="phone">
+                  <h4>Phone</h4>
+                  <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> xxxx.xxx.xxx</p>
+                  <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 0969.653.921</p>
+               </div>
+               <div class="email">
+                  <h4>Email</h4>
+                  <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:dhthang1998@gmail.com"> dhthang1998@gmail.com</a></p>
+               </div>
+            </div>
+            <div class="col-md-8 contact-right-w3">
+               <form name="form" action="#" onsubmit="return validate();" method="post">
+                  <input type="text" class="text" name="Name" placeholder="Name" required="">
+                  <input type="email" class="text" name="Email" placeholder="Email" required="">
+                  <input type="text" class="text" name="Phone" placeholder="Phone" required="">
+                  <input type="text" class="text" name="City" placeholder="City" required="">
+                  <textarea name="Message" placeholder="Message" required=""></textarea>
+                  <input type="submit" class="more_btn" value="Send Message">
+               </form>
+            </div>
+            <div class="clearfix"></div>
+         </div>
+      </div>
+      <!-- Map-iFrame -->
+      <div class="map" id="map">
+         <div class="map-hover">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4432225906776!2d106.62617211432746!3d10.853854560728795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752a20be133a37%3A0x2222564f53ae228d!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1553620879343"allowfullscreen></iframe>
+            <div class="map-hover-1"></div>
+         </div>
+      </div>
+      <!-- //Map-iFrame -->
+      <!-- footer -->
+      <div class="footer">
+         <div class="container">
+            <div class="col-md-3 footer-left-w3">
+               <h4>Liên hệ</h4>
+               <ul>
+                  <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></li>
+                  <li>
+                     <a href="mailto:dhthang1998@gmail.com">
+                        <h6>ex@mail.com</h6>
+                     </a>
+                  </li>
+               </ul>
+               <ul>
+                  <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
+                  <li>
+                     <h6>0969653921</h6>
+                  </li>
+               </ul>
+               <ul>
+                  <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></li>
+                  <li>
+                     <h6>Nhân Giới</h6>
+                  </li>
+               </ul>
+               <ul>
+                  <li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span></li>
+                  <li>
+                     <h6>Đang cập nhật</h6>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-md-5 footer-middle-w3">
+               <h4>Các cô gái của chúng ta <3</h4>
+               <div class="col-md-3 img-w3-agile">
+                  <a href="single.html"><img src="images/ng1.jpg" alt=" " /></a>
+               </div>
+               <div class="col-md-3 img-w3-agile">
+                  <a href="single.html"><img src="images/ng2.jpg" alt=" " /></a>
+               </div>
+               <div class="col-md-3 img-w3-agile">
+                  <a href="single.html"><img src="images/ng3.jpg" alt=" " /></a>
+               </div>
+               <div class="col-md-3 img-w3-agile">
+                  <a href="single.html"><img src="images/ng4.jpg" alt=" " /></a>
+               </div>
+               <div class="col-md-3 img-w3-agile footer-middle-wthree">
+                  <a href="single.html"><img src="images/ng5.jpg" alt=" " /></a>
+               </div>
+               <div class="col-md-3 img-w3-agile footer-middle-wthree">
+                  <a href="single.html"><img src="images/ng6.jpg" alt=" " /></a>
+               </div>
+               <div class="col-md-3 img-w3-agile footer-middle-wthree">
+                  <a href="single.html"><img src="images/ng7.jpg" alt=" " /></a>
+               </div>
+               <div class="col-md-3 img-w3-agile footer-middle-wthree">
+                  <a href="single.html"><img src="images/ng8.jpg" alt=" " /></a>
+               </div>
+               <div class="clearfix"></div>
+            </div>
+            <div class="col-md-4 footer-right-w3">
+               <a href="index.html">
+                  <h4>Qin's Moon</h4>
+               </a>
+               <p>QinsMoon là website cung cấp và cập nhật liên tục và nhanh nhất thông tin về phim Tần Thời Minh Nguyệt.</p>
+               <p class="agileinfo">Được các thành viên liên tục đóng góp rất nhiều về thông tin nổi bật.</p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="copyright">
+               <p>&copy; 2019 Qin's Moon. All Rights Reserved | Design by DangHieuThang</p>
+            </div>
+         </div>
+      </div>
+      <!-- //footer -->
+   </body>
+</html>
