@@ -1,0 +1,17 @@
+
+h3{
+	text-align: center;
+	text-transform: uppercase;
+}
+table img{
+	width: 100px;
+}
+table{
+	margin: 0 auto;
+}
+table tr td{
+	margin: 10px;
+}
+buttom{
+	float: left
+}
